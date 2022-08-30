@@ -80,12 +80,12 @@ function debloat() {
   sudo rm -rf bv9500plus-mtk-kpd.kl empty lenovo-synaptics_dsx.kl mimix3-gpio-keys.kl moto-* nokia-soc_gpio_keys.kl nubia-nubia_synaptics_dsx.kl oneplus6-synaptics_s3320.kl oppo-touchpanel.kl samsung-* unihertz-* zf6-goo* umidigi/ teracube2e-mtk-kpd.kl tecno-touchpanel.kl
   cd ../..
   echo "[*] Debloating google bloatware..."
-  app_list="BasicDreams PlayAuto* SpeechServices EmergenyInfo Lens TouchAssistant Health MusicPlayerGO TagGoogle Recorder Map acebook YouTube Velvet Duo Videos Gmail Photos Keep Tips arcore ARCORE AndroidAuto Chrome Drive GoogleOne GoogleAssist TurboPrebuilt Telemetry Diagnostics BetaFeedback HelpRtcPrebuilt Hub GoogleCamera TTS"
+  app_list="BasicDreams PlayAuto* Camera2 CarrierServices Calculator DevicePolicy Bug Bugle Scribe Maestro Micropaper SpeechServices EmergenyInfo Lens TouchAssistant Health MusicPlayerGO TagGoogle Recorder Map acebook YouTube Velvet Duo Videos Gmail Photos Keep Tips arcore ARCORE AndroidAuto Chrome LocationHistory Drive GoogleOne GoogleAssist TurboPrebuilt Telemetry Diagnostics BetaFeedback HelpRtcPrebuilt Hub GoogleCamera TTS"
   for app in $app_list; do
   sudo rm -rf system/*app/*$app*
   sudo rm -rf system/*/*app/*$app*
   done
-  cd ../../system_ext/apex/
+  cd ../system_ext/apex/
   echo "[*] Debloating useless vndks (will leave only vndk30)..."
   sudo rm -rf com.android.vndk.v2* com.android.vndk.v31*
   echo "[!] Successfully finished debloating!"
