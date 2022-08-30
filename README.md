@@ -4,7 +4,7 @@
 </div><br>
 <h2>Features:</h2>
     
-- Debloat overlays
+- Debloat useless treble overlays
 - Debloat google bloat
 - Add bluetooth fix props
 - Add grapheneos camera
