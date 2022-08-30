@@ -210,6 +210,7 @@ fi
 
 if [ "$2" = "--resize" ] || [ "$3" = "--resize" ] || [ "$4" = "--resize" ] || [ "$5" = "--resize" ] || [ "$6" = "--resize" ] || [ "$7" = "--resize" ] || [ "$8" = "--resize" ];then
   resize="true"
+  umount="true"
 else
   resize="false"
 fi
