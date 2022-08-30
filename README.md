@@ -48,6 +48,7 @@ You should use atleast one flag below.
 [--umount]: Umount the image after finishing jobs (by default it will not umount)
 [--resize]: Shrink the image file
 [--add_graphenecam]: Add GrapheneOSCamera as a system app
+```
 </b>
 
 Credits:
