@@ -1,5 +1,5 @@
 <div align ="center">
-<h3>GSI Tools Bebonia </h3>
+<h3>GSI Tool Bebonia </h3>
 <b>A script to automate somethings related to gsis for redmi note 8 pro. Currently only aosp roms are supported.
 </div><br>
 <h2>Features:</h2>
@@ -50,9 +50,10 @@ You should use atleast one flag below.
 [--add_graphenecam]: Add GrapheneOSCamera as a system app
 ```
 </b>
-
-Credits:
+<br>
+<h2>Credits:</h2>
 
 - [Converting to .new.dat.br](https://github.com/xiaoxindada/SGSI-build-tool)
 - [Extra Overlays](https://github.com/MrErenK/Extra-Overlays/#credits)
 - [GrapheneCam](https://github.com/bishwofic/GrapheneCamera)
+<br>
