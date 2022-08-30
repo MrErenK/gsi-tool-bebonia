@@ -75,7 +75,7 @@ function debloat() {
   cd $MOUNT_DIR/system/product/overlay
   GLOBIGNORE=treble-overlay-NightMode.apk:treble-overlay-caf-ims.apk:treble-overlay-highpriomisc.apk:treble-overlay-devinputjack.apk:treble-overlay-hw-ims.apk:treble-overlay-misc-*:treble-overlay-mtk-ims.apk:treble-overlay-sec-ims.apk:treble-overlay-sprd-ims.apk:treble-overlay-tethering-nobpf.apk:treble-overlay-tethering.apk:treble-overlay-wifi5g.apk:treble-overlay-xiaomi-redminote8pro.apk && sudo rm -rf treble-overlay-* && unset GLOBIGNORE
   cd ../../app/
-  sudo rm -rf *nokia* *oneplus* *mimix3* *redminote6pro*
+  sudo rm -rf *nokia* *oneplus* *mimix3* *redminote6pro* empty
   cd ../phh/
   sudo rm -rf bv9500plus-mtk-kpd.kl empty lenovo-synaptics_dsx.kl mimix3-gpio-keys.kl moto-* nokia-soc_gpio_keys.kl nubia-nubia_synaptics_dsx.kl oneplus6-synaptics_s3320.kl oppo-touchpanel.kl samsung-* unihertz-* zf6-goo* umidigi/ teracube2e-mtk-kpd.kl tecno-touchpanel.kl
   cd ../..
