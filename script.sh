@@ -85,7 +85,7 @@ function debloat() {
   sudo rm -rf system/*app/*$app*
   sudo rm -rf system/*/*app/*$app*
   done
-  cd system_ext/apex/
+  cd system/system_ext/apex/
   echo "[*] Debloating useless vndks (will leave only vndk30)..."
   sudo rm -rf com.android.vndk.v2* com.android.vndk.v31*
   echo "[!] Successfully finished debloating!"
