@@ -9,13 +9,13 @@
 - Add bluetooth fix props
 - Add grapheneos camera
 - Add extra overlays for wifi and signal icons, will only work the roms which has "Themes" section that lets you to change wifi, signal icons etc
-- Convert to .img to .new.dat.br to use in flashable zips
+- Convert .img to .new.dat.br to use in flashable zips
 - Umount image after finishing jobs
 - Shrink image to reduce image size
 <br>
 <h2>Usage:</h2>
 
-- Create a empty dir
+- Create an empty dir
 ```
 mkdir gsi && cd gsi
 ```
