@@ -80,7 +80,7 @@ function debloat() {
   sudo rm -rf bv9500plus-mtk-kpd.kl empty lenovo-synaptics_dsx.kl mimix3-gpio-keys.kl moto-* nokia-soc_gpio_keys.kl nubia-nubia_synaptics_dsx.kl oneplus6-synaptics_s3320.kl oppo-touchpanel.kl samsung-* unihertz-* zf6-goo* umidigi/ teracube2e-mtk-kpd.kl tecno-touchpanel.kl
   cd ../..
   echo "[*] Debloating google bloatware..."
-  app_list="BasicDreams PlayAuto* Camera2 CarrierServices Calculator DevicePolicy Bug Bugle Scribe Maestro Micropaper SpeechServices EmergenyInfo Lens TouchAssistant Health MusicPlayerGO TagGoogle Recorder Map acebook YouTube Velvet Duo Videos Gmail Photos Keep Tips arcore ARCORE AndroidAuto Chrome LocationHistory Drive GoogleOne GoogleAssist TurboPrebuilt Telemetry Diagnostics BetaFeedback HelpRtcPrebuilt Hub GoogleCamera TTS"
+  app_list="BasicDreams PlayAuto* Camera2 CarrierServices Calculator DevicePolicy Bug Scribe Maestro SpeechServices EmergenyInfo Lens TouchAssistant Health MusicPlayerGO TagGoogle Recorder Map acebook YouTube Velvet Duo Videos Gmail Photos Keep Tips arcore ARCORE AndroidAuto Chrome LocationHistory Drive GoogleOne GoogleAssist TurboPrebuilt Telemetry Diagnostics BetaFeedback HelpRtcPrebuilt GoogleCamera TTS"
   for app in $app_list; do
   sudo rm -rf system/*app/*$app*
   sudo rm -rf system/*/*app/*$app*
@@ -114,7 +114,7 @@ function addgraphene() {
   mount
   echo "[!] Adding GrapheneOSCamera"
   cd $MOUNT_DIR/system/priv-app/ && sudo mkdir -p GrapheneOSCamera && cd GrapheneOSCamera
-  sudo cp -r $TOOL_DIR/graphenecam/GrapheneOSCamera.apk . && echo "[!] Successfully added graphene camera." || echo "[!] An error occurred. Porbably the gsi image doesnt have enough space. First run "$0 $gsi --debloat" then try again."
+  sudo cp -r $TOOL_DIR/graphenecam/GrapheneOSCamera.apk . && echo "[!] Successfully added graphene camera." || echo "[!] An error occurred. Probably the gsi image doesnt have enough space. First run "$0 $gsi --debloat" then try again."
   cd $TOOL_DIR
 }
 
