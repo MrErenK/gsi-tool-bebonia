@@ -158,7 +158,6 @@ elif [ "$(grep -o -E "debloat" <<< "$@" | wc -l)" -ge 2 ];then
 elif [ "$(grep -o -E "add_extra_overlays" <<< "$@" | wc -l)" -ge 2 ];then
   echo "[!] You can not use the -add_extra_overlay flag more than once. "
   exit 1
-  exit 1
 elif [ "$(grep -o -E "bt_fix" <<< "$@" | wc -l)" -ge 2 ] || [ "$(grep -o -E "bluetooth_fix" <<< "$@" | wc -l)" -ge 2 ];then
   echo "[!] You can not use the -bt_fix flag more than once."
   exit 1
