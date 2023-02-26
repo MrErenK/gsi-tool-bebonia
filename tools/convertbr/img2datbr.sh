@@ -51,7 +51,10 @@ function sdat2sdat_br() {
     echo "Error!"
     exit
    else
-    echo "Created dat.br! Path: $LOCALDIR/new_dat/${image_name}.new.dat.br"
+    echo "Created dat.br! Path: $LOCALDIR/new_dat/${image_name}.new.dat.br. Cleaning up..."
+    cd $LOCALDIR/new_dat/
+    rm -f ${image_name}.new.dat
+    cd $LOCALDIR
   fi
 }
 
