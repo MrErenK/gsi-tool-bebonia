@@ -84,7 +84,7 @@ makedatbr() {
     exit 1
   fi
   umount
-  echo "[!] Starting converting img to dat.br"
+  echo "[*] Started converting img to dat.br"
   bash $TOOL_DIR/convertbr/img2datbr.sh $GsiPath || echo "[!] An error occured while converting to dat.br."
 }
 
