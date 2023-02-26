@@ -27,6 +27,10 @@ exit 0
 }
 
 add_extra_overlays() {
+  if [ "$(findmnt $MOUNT_DIR)" = "" ]; then
+    echo "[!] An error occured, the image is not mounted!"
+    exit 1
+  fi
   echo "[!] Starting adding extra wifi and signal icons..."
   cd $MOUNT_DIR/system/product/overlay/ || exit 1
   sudo cp -r $TOOL_DIR/overlays/* . && echo "[*] Sucessfully added extra wifi and signal icons" || echo "[!] An error occured while adding extra wifi and signal icons"
@@ -65,6 +69,10 @@ debloat() {
 }
 
 fix_bluetooth() {
+  if [ "$(findmnt $MOUNT_DIR)" = "" ]; then
+    echo "[!] An error occured, the image is not mounted!"
+    exit 1
+  fi
   echo "[*] Fixing bluetooth..."
   sudo chown $USER:$USER $MOUNT_DIR/system/build.prop || echo "[!] An error occured while adding bluetooth fix. Exiting with code 1."
   cd $MOUNT_DIR/system/
