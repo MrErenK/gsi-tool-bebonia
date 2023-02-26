@@ -32,7 +32,7 @@ chmod -R +x gsi-tool-bebonia && cd gsi-tool-bebonia
 ```
 - Example
 ```
-./script.sh -path ~/Downloads/system.img -debloat -add_extra_overlays -fix_bt
+./script.sh -path ~/Downloads/system.img -debloat -add_extra_overlays -bt_fix
 ```
 - Supported flags:
 ```
